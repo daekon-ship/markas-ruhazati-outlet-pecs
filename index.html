@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Márkás Ruházati Outlet — Pécs, Forrás Üzletház</title>
+<meta name="description" content="Márkás ruhák és kiegészítők Pécsen, a Forrás Üzletház első emeletén. H–P 10–18, szombat 10–13. +36 20 327 9089">
+<meta property="og:title" content="Márkás Ruházati Outlet — Pécs">
+<meta property="og:description" content="Márkás ruhák és kiegészítők Pécsen, a Forrás Üzletház első emeletén.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#12100E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2312100E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23F2EDE4' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Archivo:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   Márkás Ruházati Outlet — editorial one-pager
+   ========================================================= */
+
+:root{
+  --bone:#F2EDE4;
+  --bone-2:#EAE3D6;
+  --ink:#12100E;
+  --ink-70:rgba(18,16,14,.70);
+  --ink-45:rgba(18,16,14,.45);
+  --ink-16:rgba(18,16,14,.16);
+  --accent:#D9451F;
+  --accent-ink:#F2EDE4;
+  --green:#2E7D4F;
+
+  --serif:"Bodoni Moda", Georgia, "Times New Roman", serif;
+  --sans:"Archivo", "Helvetica Neue", Arial, sans-serif;
+
+  --pad:clamp(20px, 5vw, 72px);
+  --maxw:1440px;
+  --r:2px;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  margin:0;
+  background:var(--bone);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.62;
+  font-variant-numeric:tabular-nums;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img{max-width:100%;display:block}
+a{color:inherit}
+em{font-style:italic}
+
+.visually-hidden{
+  position:absolute;width:1px;height:1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;
+}
+
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--ink);color:var(--bone);padding:12px 18px;
+  font-size:14px;letter-spacing:.04em;
+}
+.skip:focus{left:8px;top:8px}
+
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ---------- typographic primitives ---------- */
+
+.display{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(2.6rem, 6vw, 5.2rem);
+  line-height:.98;
+  letter-spacing:-.015em;
+  margin:0;
+}
+.display em{font-weight:500}
+
+.kicker{
+  font-size:12px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--ink-70);
+  margin:0;
+}
+
+.section{
+  padding:clamp(72px,10vw,140px) var(--pad);
+  max-width:var(--maxw);
+  margin:0 auto;
+}
+
+.sec-head{
+  display:flex;
+  align-items:baseline;
+  gap:16px;
+  border-top:1px solid var(--ink-16);
+  padding-top:18px;
+  margin-bottom:clamp(36px,5vw,64px);
+}
+.sec-index{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:15px;
+  color:var(--accent);
+}
+.sec-name{
+  font-size:12px;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--ink-45);
+}
+
+/* ---------- buttons & links ---------- */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:15px 28px;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  border:1px solid var(--ink);
+  border-radius:var(--r);
+  transition:background .35s var(--ease), color .35s var(--ease), transform .35s var(--ease), border-color .35s var(--ease);
+}
+.btn-solid{background:var(--ink);color:var(--bone)}
+.btn-solid:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--bone);border-color:rgba(242,237,228,.5)}
+.btn-ghost:hover{background:var(--bone);color:var(--ink);border-color:var(--bone);transform:translateY(-2px)}
+.btn-ghost-dark{background:transparent;color:var(--ink)}
+.btn-ghost-dark:hover{background:var(--ink);color:var(--bone);transform:translateY(-2px)}
+.btn-call{padding:11px 20px;font-size:11.5px;border-color:rgba(242,237,228,.45);color:var(--bone)}
+.btn-call:hover{background:var(--bone);color:var(--ink)}
+
+.link-arrow{
+  display:inline-block;
+  margin-top:8px;
+  font-size:12.5px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--accent);
+  border-bottom:1px solid currentColor;
+  padding-bottom:3px;
+  transition:opacity .3s var(--ease), transform .3s var(--ease);
+}
+.link-arrow:hover{transform:translateX(5px)}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-head{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:100;
+  transition:background .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.site-head.is-scrolled{
+  background:rgba(14,13,11,.98);
+  border-bottom-color:rgba(242,237,228,.14);
+}
+/* fullscreen mobil menü: semmi ne törje a fixed pozíciót */
+.site-head.is-menu-open{background:transparent;border-bottom-color:transparent;backdrop-filter:none}
+.head-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:16px var(--pad);
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--bone);
+  margin-right:auto;
+}
+.brand-mark{
+  width:34px;height:34px;
+  display:grid;place-items:center;
+  border:1px solid rgba(242,237,228,.5);
+  font-family:var(--serif);
+  font-size:17px;
+  line-height:1;
+  transition:background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.brand:hover .brand-mark{background:var(--accent);border-color:var(--accent)}
+.brand-name{
+  font-size:13.5px;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.brand-name em{font-family:var(--serif);font-weight:500;letter-spacing:.06em;text-transform:none}
+
+.main-nav{display:flex;gap:30px}
+.main-nav a{
+  position:relative;
+  font-size:12.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:rgba(242,237,228,.78);
+  padding:6px 0;
+  transition:color .3s var(--ease);
+}
+.main-nav a::after{
+  content:"";
+  position:absolute;left:0;bottom:0;
+  width:100%;height:1px;
+  background:var(--accent);
+  transform:scaleX(0);
+  transform-origin:right;
+  transition:transform .4s var(--ease);
+}
+.main-nav a:hover,.main-nav a.is-active{color:var(--bone)}
+.main-nav a:hover::after,.main-nav a.is-active::after{transform:scaleX(1);transform-origin:left}
+
+.head-actions{display:flex;align-items:center;gap:14px}
+
+.status-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(242,237,228,.82);
+  border:1px solid rgba(242,237,228,.28);
+  padding:8px 14px;
+  border-radius:100px;
+  white-space:nowrap;
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ink-45);flex:none}
+[data-state="open"] .dot{background:#39C07A;box-shadow:0 0 0 0 rgba(57,192,122,.6);animation:pulse 2.4s infinite}
+[data-state="closed"] .dot{background:#E0603F}
+@keyframes pulse{
+  70%{box-shadow:0 0 0 8px rgba(57,192,122,0)}
+  100%{box-shadow:0 0 0 0 rgba(57,192,122,0)}
+}
+
+.nav-toggle{
+  display:none;
+  width:42px;height:38px;
+  background:none;border:1px solid rgba(242,237,228,.35);
+  border-radius:var(--r);
+  cursor:pointer;
+  flex-direction:column;justify-content:center;align-items:center;gap:6px;
+  padding:0;
+}
+.nav-toggle span{display:block;width:18px;height:1.5px;background:var(--bone);transition:transform .35s var(--ease), opacity .3s}
+.nav-toggle[aria-expanded="true"] span:first-child{transform:translateY(3.75px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:last-child{transform:translateY(-3.75px) rotate(-45deg)}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  color:var(--bone);
+  padding:112px var(--pad) 0;
+  isolation:isolate;
+}
+.hero-media{position:absolute;inset:0;z-index:-2;background:linear-gradient(150deg,#2a2320,#141110 55%,#3a241c)}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(.9) brightness(.78)}
+.hero-scrim{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(to top, rgba(8,7,6,.94) 0%, rgba(8,7,6,.78) 26%, rgba(8,7,6,.5) 55%, rgba(8,7,6,.58) 100%),
+    linear-gradient(to right, rgba(8,7,6,.72) 0%, rgba(8,7,6,.4) 55%, rgba(8,7,6,.14) 100%);
+}
+
+.hero-body{
+  max-width:var(--maxw);
+  width:100%;
+  margin:0 auto;
+  padding-bottom:clamp(24px,3.5vw,44px);
+}
+.hero .kicker{color:rgba(242,237,228,.72);letter-spacing:.3em}
+.hero-title{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(3rem, 11vw, 9.5rem);
+  line-height:.87;
+  letter-spacing:-.03em;
+  margin:20px 0 0;
+  text-transform:none;
+  text-shadow:0 2px 40px rgba(8,7,6,.45);
+}
+.hero-title span{display:block}
+.hero-title .accent-word{
+  font-style:italic;
+  font-weight:500;
+  color:var(--accent);
+}
+.hero-lede{
+  max-width:46ch;
+  font-size:clamp(1rem,1.35vw,1.2rem);
+  color:rgba(242,237,228,.9);
+  margin:20px 0 0;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+
+.hero-facts{
+  max-width:var(--maxw);
+  width:100%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(242,237,228,.22);
+}
+.fact{padding:22px 26px 26px 0}
+.fact + .fact{border-left:1px solid rgba(242,237,228,.22);padding-left:26px}
+.fact-label{
+  display:block;
+  font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;
+  color:rgba(242,237,228,.55);
+  margin-bottom:8px;
+}
+.fact-value{font-size:14.5px;line-height:1.55;color:rgba(242,237,228,.92)}
+.fact-value a{text-decoration:none;border-bottom:1px solid rgba(242,237,228,.35);transition:border-color .3s}
+.fact-value a:hover{border-color:var(--accent);color:#fff}
+
+/* =========================================================
+   MARQUEE
+   ========================================================= */
+
+.marquee{
+  background:var(--ink);
+  color:var(--bone);
+  overflow:hidden;
+  padding:16px 0;
+  border-top:1px solid rgba(242,237,228,.1);
+}
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:slide 34s linear infinite;
+}
+.marquee-track span{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:clamp(18px,2.4vw,28px);
+  white-space:nowrap;
+  padding-right:.4em;
+}
+.marquee-track i{color:var(--accent);font-style:normal;padding:0 .5em}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* =========================================================
+   01 PROFIL
+   ========================================================= */
+
+.profil-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(32px,6vw,88px);
+  align-items:start;
+}
+.profil-lead .display em{color:var(--accent)}
+.profil-text p{margin:0 0 20px;color:var(--ink-70);max-width:56ch}
+.profil-text p:first-child{
+  font-size:clamp(1.05rem,1.5vw,1.25rem);
+  color:var(--ink);
+}
+
+.fact-list{list-style:none;margin:34px 0 0;padding:0;border-top:1px solid var(--ink-16)}
+.fact-list li{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  padding:15px 0;
+  border-bottom:1px solid var(--ink-16);
+  font-size:14.5px;
+}
+.fact-list span{
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-45);
+  padding-top:3px;
+}
+.fact-list strong{font-weight:600;text-align:right}
+
+.profil-figure{margin:clamp(48px,7vw,96px) 0 0}
+.profil-figure img{
+  width:100%;
+  aspect-ratio:21/9;
+  object-fit:cover;
+  background:var(--bone-2);
+}
+.profil-figure figcaption{
+  margin-top:12px;
+  font-size:12.5px;
+  letter-spacing:.06em;
+  color:var(--ink-45);
+}
+
+/* =========================================================
+   02 KÍNÁLAT
+   ========================================================= */
+
+.kinalat{background:transparent}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(18px,2.4vw,32px);
+}
+.card{
+  background:var(--bone-2);
+  border:1px solid var(--ink-16);
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -30px rgba(18,16,14,.5)}
+.card-media{overflow:hidden;background:var(--bone-2)}
+.card-media img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  transition:transform .9s var(--ease), filter .6s var(--ease);
+}
+.card:hover .card-media img{transform:scale(1.06)}
+.card-body{padding:26px 26px 30px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-index{
+  font-family:var(--serif);font-style:italic;
+  color:var(--accent);font-size:14px;
+}
+.card h3{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(1.4rem,2vw,1.9rem);
+  margin:0;
+  line-height:1.1;
+}
+.card p{margin:0;font-size:15px;color:var(--ink-70)}
+.card-note{
+  background:var(--ink);
+  color:var(--bone);
+  border-color:var(--ink);
+  justify-content:center;
+}
+.card-note p{color:rgba(242,237,228,.75)}
+.card-note:hover{transform:translateY(-6px)}
+
+.band{
+  position:relative;
+  margin-top:clamp(40px,6vw,80px);
+  overflow:hidden;
+  background:var(--ink);
+}
+.band img{
+  width:100%;
+  aspect-ratio:2.4/1;
+  object-fit:cover;
+  opacity:.66;
+  filter:grayscale(.15) contrast(1.05);
+}
+.band-caption{
+  position:absolute;
+  left:clamp(22px,4vw,56px);
+  bottom:clamp(22px,4vw,52px);
+  color:var(--bone);
+}
+.band-kicker{
+  margin:0 0 6px;
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--accent);
+}
+.band-line{
+  margin:0;
+  font-family:var(--serif);
+  font-size:clamp(1.6rem,4vw,3.4rem);
+  line-height:1;
+}
+.band-line em{color:var(--accent)}
+
+/* =========================================================
+   03 NYITVATARTÁS
+   ========================================================= */
+
+.nyitvatartas{background:var(--bone-2);max-width:none}
+.nyitvatartas > *{
+  max-width:calc(var(--maxw) - 2 * var(--pad));
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hours-grid{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  gap:clamp(36px,6vw,88px);
+  align-items:start;
+  width:100%;
+}
+.hours-lead .display em{color:var(--accent)}
+
+.live-card{
+  display:flex;align-items:center;gap:14px;
+  background:var(--ink);
+  color:var(--bone);
+  padding:20px 24px;
+  margin-top:32px;
+  border-radius:var(--r);
+}
+.live-card .dot{width:10px;height:10px}
+.live-card[data-state="open"] .dot{background:#39C07A;animation:pulse 2.4s infinite}
+.live-card[data-state="closed"] .dot{background:#E0603F}
+.live-state{
+  margin:0;
+  font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+}
+.live-detail{margin:3px 0 0;font-size:13.5px;color:rgba(242,237,228,.68)}
+
+.note{
+  margin-top:22px;
+  font-size:13.5px;
+  color:var(--ink-45);
+  max-width:44ch;
+}
+.note a{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+
+.hours-table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--bone);
+  border:1px solid var(--ink-16);
+}
+.hours-table tr{border-bottom:1px solid var(--ink-16);transition:background .3s var(--ease)}
+.hours-table tr:last-child{border-bottom:none}
+.hours-table tr:hover{background:rgba(217,69,31,.05)}
+.hours-table th,.hours-table td{padding:19px 24px;text-align:left;font-weight:400}
+.hours-table th{
+  font-family:var(--serif);
+  font-size:clamp(1.15rem,1.7vw,1.5rem);
+  font-weight:500;
+}
+.hours-table td{
+  text-align:right;
+  font-size:15px;
+  letter-spacing:.04em;
+  color:var(--ink-70);
+}
+.hours-table td.closed{color:var(--accent);font-style:italic;font-family:var(--serif)}
+.hours-table tr.is-today{background:rgba(217,69,31,.09)}
+.hours-table tr.is-today th{position:relative;padding-left:34px}
+.hours-table tr.is-today th::before{
+  content:"MA";
+  position:absolute;left:-1px;top:50%;
+  transform:translateY(-50%);
+  writing-mode:vertical-rl;
+  font-family:var(--sans);
+  font-size:9px;letter-spacing:.2em;
+  color:var(--bone);
+  background:var(--accent);
+  padding:7px 3px;
+}
+
+/* =========================================================
+   04 HELYSZÍN
+   ========================================================= */
+
+.helyszin-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:clamp(32px,5vw,72px);
+  align-items:start;
+}
+.helyszin-info .display em{color:var(--accent)}
+.helyszin-info address{
+  font-style:normal;
+  margin-top:28px;
+  font-size:16.5px;
+  line-height:1.75;
+  color:var(--ink-70);
+}
+.helyszin-info address strong{color:var(--ink);letter-spacing:.02em}
+.helyszin-info address em{color:var(--accent);font-family:var(--serif)}
+
+.helyszin-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+
+.helyszin-notes{
+  list-style:none;
+  margin:34px 0 0;padding:0;
+  border-top:1px solid var(--ink-16);
+}
+.helyszin-notes li{
+  padding:14px 0 14px 26px;
+  border-bottom:1px solid var(--ink-16);
+  font-size:14.5px;
+  color:var(--ink-70);
+  position:relative;
+}
+.helyszin-notes li::before{
+  content:"";
+  position:absolute;left:0;top:22px;
+  width:10px;height:1px;background:var(--accent);
+}
+
+.map-wrap{
+  border:1px solid var(--ink-16);
+  background:var(--bone-2);
+  overflow:hidden;
+  aspect-ratio:4/3;
+}
+.map-wrap iframe{width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.05)}
+
+/* =========================================================
+   05 KAPCSOLAT
+   ========================================================= */
+
+.kapcsolat-title{
+  font-size:clamp(3rem,9vw,8rem);
+  margin-bottom:clamp(36px,5vw,64px);
+}
+.kapcsolat-title em{color:var(--accent)}
+
+.contact-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(16px,2vw,28px);
+}
+.contact-card{
+  display:flex;flex-direction:column;gap:6px;
+  padding:34px 30px;
+  background:var(--ink);
+  color:var(--bone);
+  text-decoration:none;
+  border:1px solid var(--ink);
+  transition:background .4s var(--ease), color .4s var(--ease), transform .4s var(--ease);
+}
+.contact-card:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-6px)}
+.cc-label{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;opacity:.6}
+.cc-value{
+  font-family:var(--serif);
+  font-size:clamp(1.2rem,2vw,1.65rem);
+  line-height:1.2;
+  word-break:break-word;
+}
+.cc-hint{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-top:14px}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-foot{
+  background:var(--ink);
+  color:rgba(242,237,228,.78);
+  padding:clamp(56px,7vw,96px) var(--pad) 28px;
+}
+.foot-top{
+  max-width:var(--maxw);margin:0 auto;
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:clamp(28px,4vw,56px);
+  padding-bottom:44px;
+  border-bottom:1px solid rgba(242,237,228,.16);
+}
+.foot-brand{display:flex;gap:16px;align-items:flex-start}
+.foot-brand .brand-mark{border-color:rgba(242,237,228,.4);flex:none}
+.foot-brand p{
+  margin:0;
+  font-family:var(--serif);
+  font-size:1.35rem;
+  line-height:1.25;
+  color:var(--bone);
+}
+.foot-brand em{color:var(--accent)}
+.foot-label{
+  display:block;
+  font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;
+  color:rgba(242,237,228,.5);
+  margin-bottom:12px;
+}
+.foot-col p{margin:0;font-size:14.5px;line-height:1.75}
+.foot-col a{text-decoration:none;border-bottom:1px solid rgba(242,237,228,.28);transition:color .3s,border-color .3s}
+.foot-col a:hover{color:var(--bone);border-color:var(--accent)}
+.foot-bottom{
+  max-width:var(--maxw);margin:22px auto 0;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;letter-spacing:.08em;
+  color:rgba(242,237,228,.45);
+}
+
+/* =========================================================
+   REVEAL MOTION
+   ========================================================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .9s var(--ease) var(--d,0s), transform .9s var(--ease) var(--d,0s);
+  will-change:opacity, transform;
+}
+.reveal.is-in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .marquee-track{animation:none}
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width:1080px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card-note{grid-column:span 2}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+
+@media (max-width:900px){
+  .main-nav{
+    position:fixed;
+    inset:0;
+    background:#0C0B0A;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:26px;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .4s var(--ease), visibility .4s;
+    z-index:99;
+  }
+  .main-nav.is-open{opacity:1;visibility:visible}
+  .main-nav a{font-size:20px;letter-spacing:.2em}
+  .nav-toggle{display:flex;position:relative;z-index:101}
+  .btn-call{display:none}
+
+  .profil-grid,.hours-grid,.helyszin-grid{grid-template-columns:1fr}
+  .contact-cards{grid-template-columns:1fr}
+
+  .hero-facts{grid-template-columns:1fr}
+  .fact{padding:16px 0;border-top:1px solid rgba(242,237,228,.16)}
+  .fact:first-child{border-top:none}
+  .fact + .fact{border-left:none;padding-left:0}
+
+  .profil-figure img{aspect-ratio:16/10}
+  .band img{aspect-ratio:16/10}
+}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .brand-name{display:none}
+  .status-pill{padding:7px 11px;font-size:10px;letter-spacing:.1em}
+  .cards{grid-template-columns:1fr}
+  .card-note{grid-column:span 1}
+  .foot-top{grid-template-columns:1fr}
+  .hero{padding-top:110px}
+  .hours-table th,.hours-table td{padding:15px 16px}
+  .hours-table tr.is-today th{padding-left:28px}
+  .head-inner{gap:12px}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#tartalom">Ugrás a tartalomra</a>
+
+<header class="site-head" id="siteHead">
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="Márkás Ruházati Outlet — főoldal">
+      <span class="brand-mark">M</span>
+      <span class="brand-name">Márkás Ruházati <em>Outlet</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Fő navigáció">
+      <a href="#profil">Profil</a>
+      <a href="#kinalat">Kínálat</a>
+      <a href="#nyitvatartas">Nyitvatartás</a>
+      <a href="#helyszin">Helyszín</a>
+      <a href="#kapcsolat">Kapcsolat</a>
+    </nav>
+
+    <div class="head-actions">
+      <span class="status-pill" id="statusPill" data-state="…" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span><span class="status-text">…</span>
+      </span>
+      <a class="btn btn-call" href="tel:+36203279089">Hívás</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Menü megnyitása">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="tartalom">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=80"
+           alt="Ruházati üzlet enteriőr" fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-body">
+      <p class="kicker reveal">Pécs · Forrás Üzletház · I. emelet</p>
+      <h1 class="hero-title reveal" style="--d:.08s">
+        <span>Márkás</span>
+        <span>Ruházati</span>
+        <span class="accent-word">Outlet</span>
+      </h1>
+      <p class="hero-lede reveal" style="--d:.16s">
+        Márkás ruhák és kiegészítők — válogatott darabok, outlet árakon,
+        Pécs belvárosában.
+      </p>
+      <div class="hero-cta reveal" style="--d:.24s">
+        <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Bajcsy-Zsilinszky%20utca%209%2C%20P%C3%A9cs" target="_blank" rel="noopener">Útvonaltervezés</a>
+        <a class="btn btn-ghost" href="tel:+36203279089">+36 20 327 9089</a>
+      </div>
+    </div>
+
+    <div class="hero-facts">
+      <div class="fact">
+        <span class="fact-label">Cím</span>
+        <span class="fact-value">Bajcsy-Zsilinszky u. 9.<br>Pécs, Forrás Üzletház, I. em.</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Elérhetőség</span>
+        <span class="fact-value"><a href="tel:+36203279089">+36 20 327 9089</a><br><a href="mailto:tundev7@gmail.com">tundev7@gmail.com</a></span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Nyitvatartás</span>
+        <span class="fact-value">H–P 10–18 · Szo 10–13<br>Vasárnap zárva</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Márkás ruházat <i>✳</i> Outlet árak <i>✳</i> Kiegészítők <i>✳</i> Pécs <i>✳</i> Forrás Üzletház <i>✳</i> I. emelet <i>✳</i></span>
+      <span>Márkás ruházat <i>✳</i> Outlet árak <i>✳</i> Kiegészítők <i>✳</i> Pécs <i>✳</i> Forrás Üzletház <i>✳</i> I. emelet <i>✳</i></span>
+    </div>
+  </div>
+
+  <!-- ================= 01 PROFIL ================= -->
+  <section class="section profil" id="profil">
+    <div class="sec-head reveal">
+      <span class="sec-index">01</span>
+      <span class="sec-name">Profil</span>
+    </div>
+
+    <div class="profil-grid">
+      <div class="profil-lead reveal">
+        <h2 class="display">Márkás darabok,<br><em>őszinte</em> árakon.</h2>
+      </div>
+
+      <div class="profil-text reveal" style="--d:.1s">
+        <p>
+          A Márkás Ruházati Outlet a pécsi Forrás Üzletház első emeletén vár,
+          márkás ruhákkal és kiegészítőkkel. A kínálat szezonálisan cserélődik,
+          a darabok pedig outlet áron — azaz jóval a bolti ár alatt — kaphatók,
+          amíg a készlet tart.
+        </p>
+        <p>
+          Betérhetsz egy gyors nézelődésre, vagy céltudatosan is kereshetsz —
+          a lényeg, hogy márkás darabot vigyél haza, jó áron. A kínálatról,
+          az aktuális érkezésekről és a nyitvatartásról érdeklődhetsz
+          telefonon vagy a Facebookon is.
+        </p>
+
+        <ul class="fact-list">
+          <li><span>Helyszín</span><strong>Pécs, Forrás Üzletház, I. emelet</strong></li>
+          <li><span>Cím</span><strong>Bajcsy-Zsilinszky u. 9.</strong></li>
+          <li><span>Profil</span><strong>Márkás ruhák és kiegészítők</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="profil-figure reveal">
+      <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=2000&q=80"
+           alt="Válogatott ruhadarabok vállfákon" loading="lazy">
+      <figcaption>Válogatott márkás darabok — a kínálatról érdeklődj nálunk.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================= 02 KÍNÁLAT ================= -->
+  <section class="section kinalat" id="kinalat">
+    <div class="sec-head reveal">
+      <span class="sec-index">02</span>
+      <span class="sec-name">Kínálat</span>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=80"
+               alt="Divatdarabok egy kollekcióból" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="card-index">A</span>
+          <h3>Ruházat</h3>
+          <p>Márkás női és férfi darabok, a hétköznapi viselettől az alkalmiig — outlet áron.</p>
+        </div>
+      </article>
+
+      <article class="card reveal" style="--d:.1s">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1400&q=80"
+               alt="Napszemüveg, mint kiegészítő" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="card-index">B</span>
+          <h3>Kiegészítők</h3>
+          <p>Táskák, övek, sálak, ékszerek és egyéb kiegészítők, amelyek megkoronázzák a szettet.</p>
+        </div>
+      </article>
+
+      <article class="card card-note reveal" style="--d:.2s">
+        <div class="card-body">
+          <span class="card-index">C</span>
+          <h3>Folyamatosan frissülő kínálat</h3>
+          <p>
+            Az aktuális készletről, az érkező darabokról és az akciókról a
+            legegyszerűbben telefonon vagy a Facebookon érdeklődhetsz.
+          </p>
+          <a class="link-arrow" href="#helyszin">Útvonal az üzethez</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="band reveal">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=80"
+           alt="Bevásárlótáskák" loading="lazy">
+      <div class="band-caption">
+        <p class="band-kicker">Outlet</p>
+        <p class="band-line">Márkás minőség — <em>outlet</em> áron.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 03 NYITVATARTÁS ================= -->
+  <section class="section nyitvatartas" id="nyitvatartas">
+    <div class="sec-head reveal">
+      <span class="sec-index">03</span>
+      <span class="sec-name">Nyitvatartás</span>
+    </div>
+
+    <div class="hours-grid">
+      <div class="hours-lead reveal">
+        <h2 class="display">Amikor<br><em>nyitva</em> vagyunk.</h2>
+
+        <div class="live-card" id="liveCard" data-state="…">
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <p class="live-state" id="liveState">…</p>
+            <p class="live-detail" id="liveDetail">Pécsi idő szerint</p>
+          </div>
+        </div>
+
+        <p class="note">
+          A közzétett nyitvatartás tájékoztató jellegű — ünnepnapokon eltérhet.
+          Biztosat telefonon érdeklődhetsz: <a href="tel:+36203279089">+36 20 327 9089</a>.
+        </p>
+      </div>
+
+      <table class="hours-table reveal" style="--d:.1s">
+        <caption class="visually-hidden">Heti nyitvatartás</caption>
+        <tbody>
+          <tr data-day="1"><th scope="row">Hétfő</th><td>10:00 — 18:00</td></tr>
+          <tr data-day="2"><th scope="row">Kedd</th><td>10:00 — 18:00</td></tr>
+          <tr data-day="3"><th scope="row">Szerda</th><td>10:00 — 18:00</td></tr>
+          <tr data-day="4"><th scope="row">Csütörtök</th><td>10:00 — 18:00</td></tr>
+          <tr data-day="5"><th scope="row">Péntek</th><td>10:00 — 18:00</td></tr>
+          <tr data-day="6"><th scope="row">Szombat</th><td>10:00 — 13:00</td></tr>
+          <tr data-day="0"><th scope="row">Vasárnap</th><td class="closed">Zárva</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= 04 HELYSZÍN ================= -->
+  <section class="section helyszin" id="helyszin">
+    <div class="sec-head reveal">
+      <span class="sec-index">04</span>
+      <span class="sec-name">Helyszín</span>
+    </div>
+
+    <div class="helyszin-grid">
+      <div class="helyszin-info reveal">
+        <h2 class="display">Pécs,<br>Forrás Üzletház.</h2>
+        <address>
+          <strong>Márkás Ruházati Outlet</strong><br>
+          Pécs, Bajcsy-Zsilinszky utca 9.<br>
+          Forrás Üzletház — <em>első emelet</em>
+        </address>
+
+        <div class="helyszin-actions">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Bajcsy-Zsilinszky%20utca%209%2C%20P%C3%A9cs" target="_blank" rel="noopener">Útvonaltervezés</a>
+          <a class="btn btn-ghost-dark" href="tel:+36203279089">Hívás: +36 20 327 9089</a>
+        </div>
+
+        <ul class="helyszin-notes">
+          <li>A Forrás Üzletház első emeletén vagyunk</li>
+          <li>Az útvonal a Google Térképen egy kattintással megnyitható</li>
+          <li>Nyitvatartás előtt érdemes telefonon érdeklődni</li>
+        </ul>
+      </div>
+
+      <div class="map-wrap reveal" style="--d:.1s">
+        <iframe
+          title="Térkép — Bajcsy-Zsilinszky utca 9., Pécs"
+          src="https://www.google.com/maps?q=Bajcsy-Zsilinszky%20utca%209%2C%20P%C3%A9cs&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05 KAPCSOLAT ================= -->
+  <section class="section kapcsolat" id="kapcsolat">
+    <div class="sec-head reveal">
+      <span class="sec-index">05</span>
+      <span class="sec-name">Kapcsolat</span>
+    </div>
+
+    <h2 class="display kapcsolat-title reveal">Keress<br><em>minket</em>.</h2>
+
+    <div class="contact-cards">
+      <a class="contact-card reveal" href="tel:+36203279089">
+        <span class="cc-label">Telefon</span>
+        <span class="cc-value">+36 20 327 9089</span>
+        <span class="cc-hint">Hívás most →</span>
+      </a>
+      <a class="contact-card reveal" style="--d:.08s" href="mailto:tundev7@gmail.com">
+        <span class="cc-label">E-mail</span>
+        <span class="cc-value">tundev7@gmail.com</span>
+        <span class="cc-hint">Írj nekünk →</span>
+      </a>
+      <a class="contact-card reveal" style="--d:.16s" href="https://www.facebook.com/markasruhazatioutlet/" target="_blank" rel="noopener">
+        <span class="cc-label">Facebook</span>
+        <span class="cc-value">@markasruhazatioutlet</span>
+        <span class="cc-hint">Kövess minket →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-top">
+    <div class="foot-brand">
+      <span class="brand-mark">M</span>
+      <p>Márkás Ruházati Outlet<br><em>Pécs</em></p>
+    </div>
+    <div class="foot-col">
+      <span class="foot-label">Cím</span>
+      <p>Pécs, Bajcsy-Zsilinszky u. 9.<br>Forrás Üzletház, I. emelet</p>
+    </div>
+    <div class="foot-col">
+      <span class="foot-label">Nyitvatartás</span>
+      <p>Hétfő–Péntek 10:00–18:00<br>Szombat 10:00–13:00<br>Vasárnap zárva</p>
+    </div>
+    <div class="foot-col">
+      <span class="foot-label">Elérhetőség</span>
+      <p>
+        <a href="tel:+36203279089">+36 20 327 9089</a><br>
+        <a href="mailto:tundev7@gmail.com">tundev7@gmail.com</a><br>
+        <a href="https://www.facebook.com/markasruhazatioutlet/" target="_blank" rel="noopener">Facebook-oldal</a>
+      </p>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="year">2026</span> Márkás Ruházati Outlet</span>
+    <span>Pécs · Forrás Üzletház</span>
+  </div>
+</footer>
+
+<script>
+/* Márkás Ruházati Outlet — interactions & live opening hours */
+
+(function () {
+  'use strict';
+
+  /* -------------------------------------------------
+     Nyitvatartás forrás (közzétett adatok)
+     0 = vasárnap … 6 = szombat ; [nyitás, zárás] percben, null = zárva
+  ------------------------------------------------- */
+  var HOURS = {
+    0: null,
+    1: [600, 1080], // Hétfő    10:00–18:00
+    2: [600, 1080], // Kedd
+    3: [600, 1080], // Szerda
+    4: [600, 1080], // Csütörtök
+    5: [600, 1080], // Péntek
+    6: [600, 780]   // Szombat  10:00–13:00
+  };
+
+  var DAY_NAMES = ['Vasárnap', 'Hétfő', 'Kedd', 'Szerda', 'Csütörtök', 'Péntek', 'Szombat'];
+  var TZ = 'Europe/Budapest';
+
+  /* Pécs (Europe/Budapest) szerinti "most" */
+  function nowInBudapest() {
+    var parts = new Intl.DateTimeFormat('en-GB', {
+      timeZone: TZ,
+      weekday: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      day: 'numeric',
+      month: 'numeric'
+    }).formatToParts(new Date());
+
+    var get = function (type) {
+      for (var i = 0; i < parts.length; i++) if (parts[i].type === type) return parts[i].value;
+      return '';
+    };
+
+    var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+
+    return {
+      day: map[get('weekday')],
+      minutes: parseInt(get('hour'), 10) * 60 + parseInt(get('minute'), 10)
+    };
+  }
+
+  function fmt(mins) {
+    var h = Math.floor(mins / 60), m = mins % 60;
+    return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m;
+  }
+
+  function nextOpening(day) {
+    for (var i = 1; i <= 7; i++) {
+      var d = (day + i) % 7;
+      if (HOURS[d]) return { day: d, open: HOURS[d][0], inDays: i };
+    }
+    return null;
+  }
+
+  function computeStatus() {
+    var now = nowInBudapest();
+    var today = HOURS[now.day];
+
+    if (today && now.minutes >= today[0] && now.minutes < today[1]) {
+      return {
+        state: 'open',
+        short: 'Nyitva',
+        long: 'Most nyitva vagyunk',
+        detail: 'Ma ' + fmt(today[0]) + '–' + fmt(today[1]) + ' · zárás ' + fmt(today[1]) + ' (pécsi idő)'
+      };
+    }
+
+    if (today && now.minutes < today[0]) {
+      return {
+        state: 'closed',
+        short: 'Zárva',
+        long: 'Most zárva vagyunk',
+        detail: 'Ma ' + fmt(today[0]) + 'kor nyitunk (pécsi idő)'
+      };
+    }
+
+    var next = nextOpening(now.day);
+    var when = next.inDays === 1 ? 'Holnap' : DAY_NAMES[next.day];
+    return {
+      state: 'closed',
+      short: 'Zárva',
+      long: 'Most zárva vagyunk',
+      detail: 'Következő nyitás: ' + when.toLowerCase() + ' ' + fmt(next.open) + ' (pécsi idő)'
+    };
+  }
+
+  function renderStatus() {
+    var s = computeStatus();
+
+    var pill = document.getElementById('statusPill');
+    if (pill) {
+      pill.setAttribute('data-state', s.state);
+      var t = pill.querySelector('.status-text');
+      if (t) t.textContent = s.state === 'open' ? s.short + ' · ' + maZaras() : s.short;
+    }
+
+    var card = document.getElementById('liveCard');
+    if (card) {
+      card.setAttribute('data-state', s.state);
+      var st = document.getElementById('liveState');
+      var dt = document.getElementById('liveDetail');
+      if (st) st.textContent = s.long;
+      if (dt) dt.textContent = s.detail;
+    }
+
+    markToday();
+  }
+
+  function maZaras() {
+    var now = nowInBudapest();
+    var today = HOURS[now.day];
+    return today ? 'zárás ' + fmt(today[1]) : '';
+  }
+
+  function markToday() {
+    var now = nowInBudapest();
+    var rows = document.querySelectorAll('.hours-table tr[data-day]');
+    for (var i = 0; i < rows.length; i++) {
+      var isToday = rows[i].getAttribute('data-day') === String(now.day);
+      rows[i].classList.toggle('is-today', isToday);
+    }
+  }
+
+  renderStatus();
+  setInterval(renderStatus, 60000);
+
+  /* -------------------------------------------------
+     Header: scroll állapot + aktív szekció
+  ------------------------------------------------- */
+  var head = document.getElementById('siteHead');
+  function onScroll() {
+    if (head) head.classList.toggle('is-scrolled', window.scrollY > 40);
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.main-nav a[href^="#"]'));
+  var sections = navLinks
+    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        navLinks.forEach(function (a) {
+          a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* -------------------------------------------------
+     Mobil menü
+  ------------------------------------------------- */
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+
+  function closeNav() {
+    if (!nav || !toggle) return;
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    navLinks.forEach(function (a) { a.addEventListener('click', closeNav); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeNav();
+    });
+  }
+
+  /* -------------------------------------------------
+     Scroll reveal
+  ------------------------------------------------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  /* -------------------------------------------------
+     Év a láblécben
+  ------------------------------------------------- */
+  var year = document.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
+})();
+</script>
+</body>
+</html>
